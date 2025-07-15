@@ -4,7 +4,7 @@
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy",
-    "build:production": "eleventy --pathprefix=/enigmorency",
+    "build:production": "eleventy",
     "build:css": "sass src/css/styles.scss _site/css/styles.css --style=compressed",
     "dev": "eleventy --serve --watch"
   },
