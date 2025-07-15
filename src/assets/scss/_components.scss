@@ -1,0 +1,14 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+/* ===== BLOCKQUOTES ===== */
+blockquote {
+  border-left: 4px solid $secondary-color;
+  margin: $spacing-lg 0;
+  padding-left: $spacing-md;
+  font-style: italic;
+  
+  p {
+    margin: 0;
+  }
+}

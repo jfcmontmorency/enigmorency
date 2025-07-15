@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
+/* ===== BLOCKQUOTES ===== */
+blockquote {
+  border-left: 4px solid rgba(0, 0, 0, 0.66);
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  font-style: italic;
+}
+blockquote p {
+  margin: 0;
+}
+
+/* ===== BASE ===== */
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+  border-top: 1px solid transparent;
+  color: #1B1807;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ===== TYPOGRAPHIE ===== */
+.lead {
+  font-size: 1.25rem;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.66);
+  -webkit-text-stroke: 2px rgba(0, 0, 0, 0.75);
+  -webkit-text-fill-color: transparent;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ===== LAYOUT ===== */
+main {
+  line-height: 1.5;
+}
+
+header {
+  margin: 1rem 0;
+  user-select: none;
+}
+
+.logo {
+  color: rgba(0, 0, 0, 0.66);
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 1vw;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.66);
+  display: inline-block;
+  margin-bottom: 0.125rem;
+}
+.logo::before {
+  content: " ";
+  display: inline-block;
+  width: 1vw;
+}
+
+.container {
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.container-02 {
+  position: relative;
+}
+.container-02 a {
+  position: absolute;
+  bottom: 1.8%;
+  left: 3.1%;
+  width: 4%;
+  height: 2.8%;
+}
+
+/* ===== UTILITIES ===== */
+.align-center {
+  text-align: center;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.66);
+  color: white;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 2px solid rgba(0, 0, 0, 0.66);
+  transition: all 0.3s ease;
+  margin: 1rem;
+}
+.btn:hover {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.66);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== IMAGES ===== */
+img {
+  max-width: 100%;
+  display: block;
+  max-height: 80vh;
+}
+
+figure {
+  margin-top: 0;
+  border-radius: 0.5vw;
+  box-shadow: 0 0.25rem 1rem 0.1rem black;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 960px;
+}
+figure img {
+  border-radius: 0.5vw;
+}
+figure:has(figcaption) img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+figure figcaption {
+  padding: 1rem 0;
+  color: #c0c0c0;
+  font-style: italic;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  margin: 2rem 0;
+  user-select: none;
+}
+footer svg {
+  width: 6rem;
+  fill: white;
+  mix-blend-mode: overlay;
+  opacity: 0.25;
+}
+
+.reponse {
+  color: transparent;
+  border-bottom: 1px solid black;
+}
+
+code {
+  display: inline-block;
+  background-color: rgba(0, 128, 0, 0.2);
+  border-radius: 2px;
+  padding: 0 0.3rem;
+}
+
+/* ===== DARKMODE ===== */
+body.darkmode {
+  background-color: #0a0a0a;
+  color: #e8e8e8;
+  font-weight: 300;
+}
+body.darkmode strong {
+  font-weight: 900;
+}
+body.darkmode h1 {
+  color: #ffffff;
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.6);
+  -webkit-text-fill-color: transparent;
+}
+body.darkmode .logo {
+  color: #ffffff;
+  border-bottom-color: rgba(255, 255, 255, 0.8);
+}
+body.darkmode .container {
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+}
+body.darkmode figure {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+body.darkmode figure figcaption {
+  color: #c0c0c0;
+}
+body.darkmode footer svg {
+  opacity: 1;
+  mix-blend-mode: soft-light;
+}
+body.darkmode a {
+  color: #ffffff;
+}
+body.darkmode a:hover {
+  color: #cccccc;
+}
+body.darkmode .image-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+body.darkmode .image-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+body.darkmode .btn {
+  background-color: #ffffff;
+  color: #0a0a0a;
+  border-color: #ffffff;
+}
+body.darkmode .btn:hover {
+  background-color: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+body.darkmode .reponse {
+  border-bottom: 1px solid white;
+}
