@@ -5,5 +5,5 @@ background: rog.jpg
 ---
 
 <figure>
-    <img draggable="false" src="{{ '/assets/images/menuiserie.jpg' | url }}" alt=" ">
+    <img draggable="false" src="{{ '/assets/images/menuiserie.jpg' | url }}" alt="Il faudrait construire quelque chose pour monter.">
 </figure>
